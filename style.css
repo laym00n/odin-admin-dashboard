@@ -117,11 +117,7 @@ body {
     z-index: 10;
 }
 
-.main-content {
-    grid-column: 2 / 3;
-    grid-row: 2;
-    background-color: green;
-}
+
 
 .sidebar {
     grid-row: 1 / 3;
@@ -173,5 +169,125 @@ body {
     width: 40px;
     justify-self: center;
 
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background-color: #E2E8F0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 4fr  1fr;
+    gap: 25px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+}
+
+.project-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    border-left: 10px solid #F0B429;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+}
+
+.card-icons svg {
+    width: 25px;
+    height: auto;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 20px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.card-text h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.card-text p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.announcement-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.announcement-card {
+    display: grid;
+    gap: 25px;
+}
+
+.announcement-card hr {
+    border: 0;
+    border-top: 1px solid hsla(210, 3%, 44%, 0.473);
+}
+
+.announcement p {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.announcement h5 {
+    font-size: 0.9rem;
+    margin: 0 0 5px 0;
+}
+
+.announcement-card {
+    padding: 25px 30px;
+}
+
+.trend-item img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.trending-card {
+    display: grid;
+    gap: 25px;
+    padding: 25px 30px;
+}
+
+.trend-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.trend-text p:nth-child(2) {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.trend-text p:nth-child(1) {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
 }
 
